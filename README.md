@@ -8,5 +8,5 @@ Dépôt de suivi pour la double compétence Produit (Stratégie/ROI) et Tech (Vi
 - **Phase 4 : Spécialisation** (Mai-Août) - [0/1]
 
 ## 🛠️ Stack de Travail
-- **Environnement :** VS Code + Cline / Cursor [web:177].
-- **IA :** Claude 3.5 Sonnet, Gemini 1.5 Pro, Vertex AI [web:11].
+- **Environnement :** VS Code + Cline / Github copilot + antigravity + a tester Gemini cli / Claude Code
+- **IA :** Claude, Gemini 1.5 Pro, Vertex AI
