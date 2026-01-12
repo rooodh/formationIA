@@ -1,0 +1,219 @@
+import os
+from pathlib import Path
+
+# Configuration des contenus détaillés
+structure = {
+    "README.md": """# 🚀 formationIA : Parcours PO & Vibecoding 2026
+Dépôt de suivi pour la double compétence Produit (Stratégie/ROI) et Tech (Vibecoding/Prototypage).
+
+## 📊 Tableau de Bord
+- **Phase 1 : Fondations** (Janvier) - [0/3]
+- **Phase 2 : Consolidation** (Fév-Mars) - [0/4]
+- **Phase 3 : AI Coding** (Avril) - [0/4]
+- **Phase 4 : Spécialisation** (Mai-Août) - [0/1]
+
+## 🛠️ Stack de Travail
+- **Environnement :** VS Code + Cline / Cursor [web:177].
+- **IA :** Claude 3.5 Sonnet, Gemini 1.5 Pro, Vertex AI [web:11].""",
+
+    "programme/prompt-origine.md": """# 🤖 Prompt de Génération du Parcours
+Voici le prompt initial utilisé pour structurer ce plan de formation.
+
+```text
+(Copier ici le texte complet de votre section 99 du prompt initial)
+```""",
+
+    "programme/parcours-2026.md": """# 📅 Calendrier de Formation 2026
+
+| Semaine | Formation | Effort | Badge |
+| :--- | :--- | :--- | :--- |
+| S1-S2 | AI for Everyone | 6h | Coursera/DeepLearning.AI |
+| S2-S3 | IBM SkillsBuild | 10h | Digital Credential IBM |
+| S4 | Elements of AI (1-2) | 5h | Univ. Helsinki |
+| S5-S7 | Elements of AI (3-6) | 25h | Certificat Helsinki |
+| S8 | GenAI for Everyone | 3h | DeepLearning.AI |
+| S9-S11| Google GenAI & Vertex | 13h | Google Cloud Skill Badge |
+| S12-S15| Vibecoding & Copilot | 17h | Microsoft/Codecademy |
+| S16+ | Spécialisation Duke/IBM| 90-120h| Certificat Pro |""",
+
+    # PHASE 1
+    "formations/phase-1-fondations/01-ai-for-everyone.md": """---
+id: "P1-01"
+nom: "AI for Everyone"
+formateur: "Andrew Ng"
+effort: "6h"
+prix: "Gratuit (Audit)"
+prestige: "5/5"
+url: "https://www.coursera.org/learn/ai-for-everyone"
+badge: "Badge LinkedIn"
+---
+# 🎓 AI for Everyone
+Vision stratégique de l'IA. Comprendre ce qu'est un projet IA viable et comment collaborer avec la Data Science [web:67].""",
+
+    "formations/phase-1-fondations/02-ibm-skillsbuild.md": """---
+id: "P1-02"
+nom: "IBM SkillsBuild : AI Fundamentals"
+effort: "10h"
+prix: "Gratuit"
+prestige: "4/5"
+url: "https://skillsbuild.org/"
+badge: "IBM Digital Credential"
+---
+# 🤖 IBM AI Fundamentals
+Bases techniques, éthique et introduction aux outils Enterprise IA [web:108].""",
+
+    "formations/phase-1-fondations/03-elements-of-ai-1.md": """---
+id: "P1-03"
+nom: "Elements of AI (Chap 1-2)"
+effort: "5h"
+prix: "Gratuit"
+prestige: "5/5"
+url: "https://www.elementsofai.com/"
+badge: "En cours"
+---
+# 🏛️ Elements of AI : Fondamentaux
+Approche académique sur la définition de l'IA et la résolution de problèmes [web:105].""",
+
+    # PHASE 2
+    "formations/phase-2-consolidation/01-elements-of-ai-2.md": """---
+id: "P2-01"
+nom: "Elements of AI (Chap 3-6)"
+effort: "25h"
+prix: "Gratuit"
+prestige: "5/5"
+url: "https://www.elementsofai.com/"
+badge: "Certificat University of Helsinki"
+---
+# 🏛️ Elements of AI : Avancé
+Probabilités, Machine Learning et impact sociétal de l'IA [web:105].""",
+
+    "formations/phase-2-consolidation/02-genai-for-everyone.md": """---
+id: "P2-02"
+nom: "Generative AI for Everyone"
+formateur: "Andrew Ng"
+effort: "3h"
+prix: "Gratuit (Audit)"
+prestige: "5/5"
+url: "https://www.coursera.org/learn/generative-ai-for-everyone"
+badge: "Badge DeepLearning.AI"
+---
+# ✨ Generative AI for Everyone
+Focus sur les LLMs et leur application concrète dans le workflow produit [web:94].""",
+
+    "formations/phase-2-consolidation/03-google-genai-fundamentals.md": """---
+id: "P2-03"
+nom: "Google GenAI Fundamentals"
+effort: "3h"
+prix: "Gratuit"
+prestige: "4/5"
+url: "https://www.cloudskillsboost.google/paths/118"
+badge: "Google Cloud Skill Badge"
+---
+# ☁️ Google GenAI Fundamentals
+Bases de l'IA générative sur Google Cloud et introduction à Vertex AI [web:9].""",
+
+    "formations/phase-2-consolidation/04-vertex-ai-prompting.md": """---
+id: "P2-04"
+nom: "Vertex AI & Gemini Prompting"
+effort: "10h"
+prix: "Gratuit (Crédits 300$)"
+prestige: "4/5"
+url: "https://cloud.google.com/vertex-ai"
+badge: "2-3 Google Skill Badges"
+---
+# 🔧 Vertex AI & Gemini
+Pratique du prompt design sur la plateforme Google Cloud [web:11].""",
+
+    # PHASE 3
+    "formations/phase-3-vibecoding/01-github-copilot-mastery.md": """---
+id: "P3-01"
+nom: "GitHub Copilot Mastery"
+effort: "5h"
+prix: "Gratuit (Audit)"
+prestige: "4/5"
+url: "https://www.coursera.org/learn/github-copilot"
+badge: "Certificat Microsoft"
+---
+# 💻 GitHub Copilot Mastery
+Optimisation de l'utilisation de Copilot pour accélérer le développement [web:176].""",
+
+    "formations/phase-3-vibecoding/02-prompt-eng-developers.md": """---
+id: "P3-02"
+nom: "Prompt Engineering for Developers"
+effort: "1h"
+prix: "Gratuit"
+prestige: "5/5"
+url: "https://www.deeplearning.ai/short-courses/prompt-engineering-for-developers/"
+badge: "Badge DeepLearning.AI"
+---
+# 📝 Prompt Engineering for Devs
+Techniques de prompting pour l'intégration de LLMs via API [web:178].""",
+
+    "formations/phase-3-vibecoding/03-github-copilot-cert.md": """---
+id: "P3-03"
+nom: "GitHub Copilot Certification Prep"
+effort: "6h"
+prix: "Gratuit"
+prestige: "4/5"
+url: "https://www.codecademy.com/"
+badge: "Badge Codecademy"
+---
+# 📜 Certification Copilot
+Préparation intensive à la certification officielle Microsoft [web:172].""",
+
+    "formations/phase-3-vibecoding/04-vibecoding-hands-on.md": """---
+id: "P3-04"
+nom: "Hands-on Vibecoding"
+effort: "5h"
+prix: "Gratuit"
+prestige: "3/5"
+url: "N/A - Pratique personnelle"
+badge: "POC Personnel"
+---
+# 🚀 Vibecoding Hands-on
+Setup de Cline, Cursor et Claude Code. Création d'un premier POC fonctionnel [web:173][web:177].""",
+
+    # PHASE 4
+    "formations/phase-4-specialisation/option-a-duke-university.md": """---
+id: "P4-A"
+nom: "AI Product Management"
+institution: "Duke University"
+effort: "90h"
+prix: "Gratuit (Audit)"
+prestige: "5/5"
+url: "https://www.coursera.org/specializations/ai-product-management-duke"
+badge: "Certificat Duke"
+---
+# 🏛️ Duke : AI Product Management
+Spécialisation académique de haut niveau sur le cycle de vie des produits IA [web:9].""",
+
+    "formations/phase-4-specialisation/option-b-ibm-ai-pm.md": """---
+id: "P4-B"
+nom: "IBM AI Product Manager"
+institution: "IBM"
+effort: "120h"
+prix: "Gratuit (Audit)"
+prestige: "5/5"
+url: "https://www.coursera.org/professional-certificates/ibm-ai-product-manager"
+badge: "IBM Professional Certificate"
+---
+# 🏢 IBM : AI Product Manager
+Formation pragmatique axée sur watsonx et les outils d'IA en entreprise [web:97].""",
+
+    "prompts/templates/system-prompt-po.md": """# 🤖 Prompt Système : Product Owner IA
+Context: Tu es un PO expert en IA chez Bpifrance.
+Objective: Analyser cette feature sous l'angle ROI et faisabilité technique.
+Constraints: Focus sur le Vibecoding pour le prototypage."""
+}
+
+def create_v0():
+    for file_path, content in structure.items():
+        p = Path(file_path)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        with open(p, "w", encoding="utf-8") as f:
+            f.write(content.strip())
+        print(f"✅ Créé : {file_path}")
+
+if __name__ == "__main__":
+    create_v0()
+    print("\n🚀 Structure V0 terminée. Vos 13 fiches de formation sont prêtes !")
