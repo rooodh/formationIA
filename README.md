@@ -57,39 +57,40 @@ Choisir une spécialisation avancée pour approfondir soit l'aspect produit, soi
 
 | Période | Formation | Durée | Badge / Résultat |
 |:---:|:---|:---:|:---|
-| **S1-S2** | **AI for Everyone** (Andrew Ng) | 6h | Vision stratégique Andrew Ng |
-| **S2-S3** | **IBM SkillsBuild : AI Fundamentals** | 10h | Badge IBM Digital Credential |
-| **S4** | **Elements of AI** (Helsinki) - Chap 1-2 | 5h | Fondamentaux académiques |
+| **S1-S2** | [**AI for Everyone**](formations/phase-1-fondations/01-ai-for-everyone.md) (Andrew Ng) | 6h | Vision stratégique Andrew Ng |
+| **S2-S3** | [**IBM SkillsBuild : AI Fundamentals**](formations/phase-1-fondations/02-ibm-skillsbuild.md) | 10h | Badge IBM Digital Credential |
+| **S4** | [**Elements of AI**](formations/phase-1-fondations/03-elements-of-ai-1.md) (Helsinki) - Chap 1-2 | 5h | Fondamentaux académiques |
 
 ### PHASE 2 : Consolidation + Google GenAI (Février - Mars)
 *Focus : LLMs, Prompt Engineering et Cloud Google.*
 
 | Période | Formation | Durée | Badge / Résultat |
 |:---:|:---|:---:|:---|
-| **S5-S7** | **Elements of AI** (Helsinki) - Chap 3-6 | 25h | Certificat University of Helsinki |
-| **S8** | **Generative AI for Everyone** (Andrew Ng) | 3h | Badge DeepLearning.AI |
-| **S9** | **Google GenAI Fundamentals** | 3h | Google Cloud Skill Badge |
-| **S10-11**| **Google Vertex AI & Gemini Prompting** | 10h | 2-3 Google Skill Badges |
+| **S5-S7** | [**Elements of AI**](formations/phase-2-consolidation/01-elements-of-ai-2.md) (Helsinki) - Chap 3-6 | 25h | Certificat University of Helsinki |
+| **S8** | [**Generative AI for Everyone**](formations/phase-2-consolidation/02-genai-for-everyone.md) (Andrew Ng) | 3h | Badge DeepLearning.AI |
+| **S9** | [**Google GenAI Fundamentals**](formations/phase-2-consolidation/03-google-genai-fundamentals.md) | 3h | Google Cloud Skill Badge |
+| **S10-11**| [**Google Vertex AI & Gemini Prompting**](formations/phase-2-consolidation/04-vertex-ai-prompting.md) | 10h | 2-3 Google Skill Badges |
 
 ### PHASE 3 : AI Coding / Vibecoding (Avril)
 *Focus : Accélération du développement et prototypage.*
 
 | Période | Formation | Durée | Badge / Résultat |
 |:---:|:---|:---:|:---|
-| **S12** | **GitHub Copilot Mastery** (Microsoft) | 5h | Certificat Microsoft/Coursera |
-| **S13** | **Prompt Engineering for Developers** | 1h | Badge DeepLearning.AI |
-| **S14** | **GitHub Copilot Certification** (Codecademy) | 6h | Préparation Certification Microsoft |
-| **S15** | **Hands-on Vibecoding** (Cline, Cursor, CLI) | 5h | Setup & POC personnel |
+| **S12** | [**GitHub Copilot Mastery**](formations/phase-3-vibecoding/01-github-copilot-mastery.md) (Microsoft) | 5h | Certificat Microsoft/Coursera |
+| **S13** | [**Prompt Engineering for Developers**](formations/phase-3-vibecoding/02-prompt-eng-developers.md) | 1h | Badge DeepLearning.AI |
+| **S14** | [**GitHub Copilot Certification**](formations/phase-3-vibecoding/03-github-copilot-cert.md) (Codecademy) | 6h | Préparation Certification Microsoft |
+| **S15** | [**Hands-on Vibecoding**](formations/phase-3-vibecoding/04-vibecoding-hands-on.md) (Cline, Cursor, CLI) | 5h | Setup & POC personnel |
 
 ### PHASE 4 : Spécialisation PM IA (Mai - Août)
 *Focus : Certification professionnelle prestigieuse (Choisir 1 option).*
 
-- **Option A : Duke University - AI Product Management**
+- **Option A : [Duke University - AI Product Management](formations/phase-4-specialisation/option-a-duke-university.md)**
   - *Profil :* Prestige académique, éthique, reconnaissance banque
   - *Effort :* ~90h (16 semaines)
-- **Option B : IBM AI Product Manager Certificate**
+- **Option B : [IBM AI Product Manager Certificate](formations/phase-4-specialisation/option-b-ibm-ai-pm.md)**
   - *Profil :* Pratique GenAI, outils enterprise (watsonx), labs
   - *Effort :* ~120h (20 semaines)
+- 📋 [Guide de choix entre les deux options](formations/phase-4-specialisation/choice-duke-vs-ibm.md)
 
 ---
 
@@ -99,6 +100,8 @@ Choisir une spécialisation avancée pour approfondir soit l'aspect produit, soi
 formationIA/
 ├── README.md
 ├── LICENSE
+├── setup_formation.py
+├── prompt-generation-arborescence-formationIA.md
 ├── formations/
 │   ├── phase-1-fondations/
 │   │   ├── 01-ai-for-everyone.md
@@ -118,11 +121,9 @@ formationIA/
 │       ├── choice-duke-vs-ibm.md
 │       ├── option-a-duke-university.md
 │       └── option-b-ibm-ai-pm.md
-├── programme/
-│   ├── parcours-2026.md
-│   └── prompt-origine.md
-└── prompts/
-    └── templates/
+└── programme/
+    ├── parcours-2026.md
+    └── prompt-origine.md
 ```
 
 ## 🏆 Bilan Final Attendu (Août 2026)
