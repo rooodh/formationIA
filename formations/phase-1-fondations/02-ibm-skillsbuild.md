@@ -6,7 +6,9 @@ prix: "Gratuit"
 prestige: "4/5"
 url: "https://skills.yourlearning.ibm.com/activity/PLAN-7913EE1DB030"
 badge: "IBM Digital Credential"
+statut: "✅ Terminé"
 date_debut: "14 janvier 2026"
+date_completion: "9 février 2026"
 ---
 # 🤖 IBM AI Fundamentals
 

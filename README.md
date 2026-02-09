@@ -11,7 +11,7 @@ Dépôt de suivi pour la double compétence Produit (Stratégie/ROI) et Tech (Vi
 4. **Multi-Cloud Mastery** : Hands-on sur IBM Watson, Google Vertex AI et Microsoft Azure
 
 ## 📊 Tableau de Bord
-- **Phase 1 : Fondations** (Janvier) - [0/3]
+- **Phase 1 : Fondations** (Janvier) - [2/3]
 - **Phase 2 : Consolidation** (Fév-Mars) - [0/4]
 - **Phase 3 : AI Coding** (Avril) - [0/4]
 - **Phase 4 : Spécialisation** (Mai-Août) - [0/1]
