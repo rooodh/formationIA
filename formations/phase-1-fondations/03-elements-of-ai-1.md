@@ -6,8 +6,8 @@ prix: "Gratuit"
 prestige: "5/5"
 url: "https://course.elementsofai.com/"
 badge: "Certificat University of Helsinki"
-statut: "En cours"
-date_debut: "10 février 2026"
+statut: "🔜 À faire"
+date_debut: ""
 ---
 # 🏛️ Elements of AI : Introduction to AI (Chapitres 1-2)
 
