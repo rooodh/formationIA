@@ -8,5 +8,5 @@
 | S5-S7 | Elements of AI (3-6) | 25h | Certificat Helsinki |
 | S8 | GenAI for Everyone | 3h | DeepLearning.AI |
 | S9-S11| Google GenAI & Vertex | 13h | Google Cloud Skill Badge |
-| S12-S15| Vibecoding & Copilot | 17h | Microsoft/Codecademy |
+| S12-S16| Claude Code + Vibe Engineering & Copilot | 18h | Anthropic/Microsoft/Codecademy |
 | S16+ | Spécialisation Duke/IBM| 90-120h| Certificat Pro |

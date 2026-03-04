@@ -1,5 +1,5 @@
 ---
-id: "P3-02"
+id: "P3-03"
 nom: "ChatGPT Prompt Engineering for Developers"
 formateur: "Isa Fulford (OpenAI) & Andrew Ng"
 effort: "1h30"

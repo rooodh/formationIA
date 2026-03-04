@@ -1,5 +1,5 @@
 ---
-id: "P3-01"
+id: "P3-02"
 nom: "GitHub Copilot Mastery"
 effort: "5h"
 prix: "Gratuit (Audit)"

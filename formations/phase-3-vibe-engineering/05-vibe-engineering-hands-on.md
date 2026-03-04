@@ -1,6 +1,6 @@
 ---
-id: "P3-04"
-nom: "Hands-on Vibecoding"
+id: "P3-05"
+nom: "Hands-on Vibe Engineering"
 effort: "5h"
 prix: "Gratuit"
 prestige: "3/5"
@@ -8,12 +8,12 @@ url: "N/A - Pratique personnelle"
 badge: "POC Personnel"
 statut: "À faire"
 ---
-# 🚀 Vibecoding Hands-on : De l'idée au POC
+# 🚀 Vibe Engineering Hands-on : De l'idée au POC
 
 ## 📝 Description
-Cette session pratique permet de mettre en application toutes les compétences acquises dans les formations précédentes. Le "vibecoding" fait référence à l'utilisation d'outils d'IA pour accélérer le développement, du prototypage rapide à la création de POCs fonctionnels.
+Cette session pratique permet de mettre en application toutes les compétences acquises dans les formations précédentes. Le "vibe engineering" fait référence à l'utilisation d'outils d'IA pour accélérer le développement, du prototypage rapide à la création de POCs fonctionnels.
 
-L'objectif est de configurer un environnement de développement optimisé avec les meilleurs outils d'IA et de créer son premier proof of concept en utilisant le "task context coding" pour passer rapidement de l'idée à l'implémentation.
+L'objectif est de configurer un environnement de développement optimisé avec les meilleurs outils d'IA (dont Claude Code) et de créer son premier proof of concept en utilisant le "task context coding" pour passer rapidement de l'idée à l'implémentation.
 
 ## 🛠️ Outils à configurer
 
@@ -125,15 +125,15 @@ L'objectif est de configurer un environnement de développement optimisé avec l
 - Comprendre le code produit
 
 ## 🎯 Objectifs d'apprentissage
-- Configurer un environnement de développement optimisé pour le vibecoding
-- Maîtriser les outils d'IA pour le développement (Cline, Cursor, Copilot)
+- Configurer un environnement de développement optimisé pour le vibe engineering
+- Maîtriser les outils d'IA pour le développement (Claude Code, Cline, Cursor, Copilot)
 - Créer un POC fonctionnel en quelques heures
 - Apprendre à itérer rapidement avec l'assistance IA
 - Développer des compétences en prompt engineering appliqué
 
 ## 💡 Compétences acquises
 - Setup et configuration d'outils d'IA pour le développement
-- Vibecoding et prototypage rapide
+- Vibe Engineering et prototypage rapide
 - Task context coding
 - Prompt engineering pour le développement
 - Débogage assisté par IA
