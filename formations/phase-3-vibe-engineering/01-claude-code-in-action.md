@@ -6,7 +6,8 @@ prix: "Gratuit"
 prestige: "4/5"
 url: "https://anthropic.skilljar.com/claude-code-in-action"
 badge: "Certificat de complétion Anthropic"
-statut: "À faire"
+statut: "✅ Terminé"
+date_completion: "26 octobre 2026"
 ---
 
 # 🤖 Claude Code in Action
@@ -55,4 +56,7 @@ Partageable sur LinkedIn.
 
 ## ✅ Retour d'expérience
 
-<!-- À compléter après la formation -->
+- **Date de complétion :** 26 octobre 2026
+- **Certificat obtenu :** Certificat de complétion Anthropic (Skilljar) — consultable et partageable depuis le profil étudiant : https://anthropic.skilljar.com/accounts/profile/
+- **Points forts / points faibles :** à compléter
+- **Notes pour la suite :** enchaîner sur Introduction aux Agent Skills et Introduction au MCP

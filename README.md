@@ -11,9 +11,9 @@ Dépôt de suivi pour la double compétence Produit (Stratégie/ROI) et Tech (Vi
 4. **Multi-Cloud Mastery** : Hands-on sur IBM Watson, Google Vertex AI et Microsoft Azure
 
 ## 📊 Tableau de Bord
-- **Phase 1 : Fondations** (Janvier) - [2/3]
+- **Phase 1 : Fondations** (Janvier) - [2/4]
 - **Phase 2 : Consolidation** (Fév-Mars) - [0/4]
-- **Phase 3 : AI & Vibe Engineering** (Avril-Mai) - [0/5]
+- **Phase 3 : AI & Vibe Engineering** (Avril-Mai) - [2/6]
 - **Phase 4 : Spécialisation** (Mai-Août) - [0/1]
 
 ## � Formations par Phase
@@ -24,6 +24,7 @@ Comprendre les concepts fondamentaux de l'IA et ses applications business.
 1. [AI for Everyone](formations/phase-1-fondations/01-ai-for-everyone.md) - Andrew Ng (Coursera)
 2. [IBM SkillsBuild](formations/phase-1-fondations/02-ibm-skillsbuild.md) - Introduction à l'IA
 3. [Elements of AI - Part 1](formations/phase-1-fondations/03-elements-of-ai-1.md) - Université d'Helsinki
+4. [OpenAI Academy - Applied AI Foundations](formations/phase-1-fondations/04-openai-academy.md) - OpenAI Academy (gratuit)
 
 ### Phase 2 : Consolidation (Février-Mars)
 Approfondir les connaissances en IA générative et ses applications pratiques.
@@ -36,7 +37,8 @@ Approfondir les connaissances en IA générative et ses applications pratiques.
 ### Phase 3 : AI & Vibe Engineering (Avril-Mai)
 Maîtriser les outils de développement assisté par IA et le prototypage rapide.
 
-1. [Claude Code in Action](formations/phase-3-vibe-engineering/01-claude-code-in-action.md) - Anthropic Academy
+0. [Claude Code 101](formations/phase-3-vibe-engineering/00-claude-code-101.md) - Anthropic Academy ✅
+1. [Claude Code in Action](formations/phase-3-vibe-engineering/01-claude-code-in-action.md) - Anthropic Academy ✅
 2. [GitHub Copilot Mastery](formations/phase-3-vibe-engineering/02-github-copilot-mastery.md) - Formation complète
 3. [Prompt Engineering for Developers](formations/phase-3-vibe-engineering/03-prompt-eng-developers.md) - DeepLearning.AI
 4. [GitHub Copilot Certification](formations/phase-3-vibe-engineering/04-github-copilot-cert.md) - Certification officielle
@@ -61,6 +63,7 @@ Choisir une spécialisation avancée pour approfondir soit l'aspect produit, soi
 | **S1-S2** | [**AI for Everyone**](formations/phase-1-fondations/01-ai-for-everyone.md) (Andrew Ng) | 6h | Vision stratégique Andrew Ng |
 | **S2-S3** | [**IBM SkillsBuild : AI Fundamentals**](formations/phase-1-fondations/02-ibm-skillsbuild.md) | 10h | Badge IBM Digital Credential |
 | **S4** | [**Elements of AI**](formations/phase-1-fondations/03-elements-of-ai-1.md) (Helsinki) - Chap 1-2 | 5h | Fondamentaux académiques |
+| **S4-S5** | [**OpenAI Academy - Applied AI Foundations**](formations/phase-1-fondations/04-openai-academy.md) | ~6h | Certificat OpenAI Academy (à confirmer) |
 
 ### PHASE 2 : Consolidation + Google GenAI (Février - Mars)
 *Focus : LLMs, Prompt Engineering et Cloud Google.*
@@ -77,7 +80,8 @@ Choisir une spécialisation avancée pour approfondir soit l'aspect produit, soi
 
 | Période | Formation | Durée | Badge / Résultat |
 |:---:|:---|:---:|:---|
-| **S12** | [**Claude Code in Action**](formations/phase-3-vibe-engineering/01-claude-code-in-action.md) (Anthropic) | 1h | Certificat Anthropic |
+| **S12** | [**Claude Code 101**](formations/phase-3-vibe-engineering/00-claude-code-101.md) (Anthropic) | 1h30 | Certificat Anthropic ✅ |
+| **S12** | [**Claude Code in Action**](formations/phase-3-vibe-engineering/01-claude-code-in-action.md) (Anthropic) | 1h | Certificat Anthropic ✅ |
 | **S13** | [**GitHub Copilot Mastery**](formations/phase-3-vibe-engineering/02-github-copilot-mastery.md) (Microsoft) | 5h | Certificat Microsoft/Coursera |
 | **S14** | [**Prompt Engineering for Developers**](formations/phase-3-vibe-engineering/03-prompt-eng-developers.md) | 1h | Badge DeepLearning.AI |
 | **S15** | [**GitHub Copilot Certification**](formations/phase-3-vibe-engineering/04-github-copilot-cert.md) (Codecademy) | 6h | Préparation Certification Microsoft |
@@ -108,13 +112,15 @@ formationIA/
 │   ├── phase-1-fondations/
 │   │   ├── 01-ai-for-everyone.md
 │   │   ├── 02-ibm-skillsbuild.md
-│   │   └── 03-elements-of-ai-1.md
+│   │   ├── 03-elements-of-ai-1.md
+│   │   └── 04-openai-academy.md
 │   ├── phase-2-consolidation/
 │   │   ├── 01-elements-of-ai-2.md
 │   │   ├── 02-genai-for-everyone.md
 │   │   ├── 03-google-genai-fundamentals.md
 │   │   └── 04-vertex-ai-prompting.md
    ├── phase-3-vibe-engineering/
+   │   ├── 00-claude-code-101.md
    │   ├── 01-claude-code-in-action.md
    │   ├── 02-github-copilot-mastery.md
    │   ├── 03-prompt-eng-developers.md

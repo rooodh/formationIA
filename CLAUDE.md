@@ -108,17 +108,25 @@ Compléter la section `## ✅ Retour d'expérience` avec :
 
 ---
 
-## Cours Anthropic Academy — à intégrer (Phase 3)
+## Cours Anthropic Academy (Phase 3)
 
-Ces fichiers sont à créer dans `formations/phase-3-vibe-engineering/` :
+État réel des fiches dans `formations/phase-3-vibe-engineering/` :
+
+| Fichier | Durée | Badge | Statut |
+|---------|-------|-------|--------|
+| `00-claude-code-101.md` | ~1h30 · 12 leçons | Certificat Anthropic | ✅ Terminé |
+| `01-claude-code-in-action.md` | ~1h · 15 leçons | Certificat Anthropic | ✅ Terminé |
+
+Restent à créer (numérotation à partir de `06`, `05` étant déjà pris par Vibe Engineering Hands-On) :
 
 | Fichier | Durée | Badge |
 |---------|-------|-------|
-| `05-claude-code-in-action.md` | ~1h · 15 leçons | Certificat Anthropic |
 | `06-intro-agent-skills.md` | ~30min · 6 modules | Certificat Anthropic |
 | `07-intro-mcp.md` | ~1h · 16 leçons | Certificat Anthropic |
 | `08-mcp-advanced.md` | ~1h · 15 leçons | Certificat Anthropic |
 | `09-building-claude-api.md` | ~8h · 84 leçons | Certificat Anthropic |
+
+Les cours Anthropic sont désormais hébergés sur `academy.claude.com` ; les URL `anthropic.skilljar.com/...` restent valides et servent de lien dans le frontmatter.
 
 Détail complet dans `programme/rapport-anthropic-academy.md`.
 
